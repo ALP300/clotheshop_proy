@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Ropa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f7f7f7;
+      }
+      header {
+        background: #222;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 8px;
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+      }
+      .product-card {
+        background: #fafafa;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        width: 220px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-card img {
+        width: 150px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .product-card h3 {
+        margin: 0.5rem 0 0.2rem 0;
+        font-size: 1.1rem;
+      }
+      .product-card p {
+        margin: 0.2rem 0;
+        color: #555;
+      }
+      .product-card button {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: #222;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .product-card button:hover {
+        background: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tienda de Ropa</h1>
+    </header>
+    <div class="container">
+      <div class="products">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80"
+            alt="Camisa Casual"
+          />
+          <h3>Camisa Casual</h3>
+          <p>Camisa de algodón para uso diario.</p>
+          <p><strong>$350</strong></p>
+          <a
+            href="https://wa.me/51976783049?text=Hola,%20quiero%20comprar%20la%20Camisa%20Casual"
+            target="_blank"
+          >
+            <button>Agregar al carrito</button>
+          </a>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+            alt="Pantalón Jeans"
+          />
+          <h3>Pantalón Jeans</h3>
+          <p>Jeans azul clásico, corte recto.</p>
+          <p><strong>$499</strong></p>
+          <button>Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
+            alt="Vestido Verano"
+          />
+          <h3>Vestido Verano</h3>
+          <p>Vestido fresco y cómodo para el verano.</p>
+          <p><strong>$420</strong></p>
+          <button>Agregar al carrito</button>
+        </div>
+        <!-- Puedes agregar más productos aquí -->
+      </div>
+    </div>
+  </body>
+</html>
